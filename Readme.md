@@ -24,17 +24,17 @@ Before starting, ensure you have the following installed:
 
 ### Build Locally
 1. Clone the repository:
-    - git clone https://github.com/Venkat3699/maven-web-application.git
-    - cd maven-web-application
+    git clone https://github.com/Venkat3699/maven-web-application.git
+    cd maven-web-application
 
 2. Use Maven to build the application:
-    - mvn clean package
+    mvn clean package
 
 3. ### Run with Docker
     ##### Build the Docker image
-        - docker build -t maven-web-app .
+        docker build -t maven-web-app .
     ##### Run the Docker container
-        - docker run -p 8080:8080 maven-web-app
+        docker run -p 8080:8080 maven-web-app
     ##### Access the application 
         - http://localhost:8080
     ##### Stop the Docker container
