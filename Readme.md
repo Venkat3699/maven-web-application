@@ -59,9 +59,9 @@ Before starting, ensure you have the following installed:
         - kubectl delete deployment maven-web-app
     #### Delete the service
         - kubectl delete svc maven-web-app
-    #### Delete the pod
+    ##### Delete the pod
         - kubectl delete pod maven-web-app-<pod-name>
 
-### Author
+## Author
      Venkat3699
      GitHub: Venkat3699
