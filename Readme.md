@@ -31,17 +31,17 @@ Before starting, ensure you have the following installed:
     - mvn clean package
 
 3. ### Run with Docker
-    3.1. Build the Docker image
+    # Build the Docker image
         - docker build -t maven-web-app .
-    3.2. Run the Docker container
+    # Run the Docker container
         - docker run -p 8080:8080 maven-web-app
-    3.3. Access the application 
+    # Access the application 
         - http://localhost:8080
-    3.4. Stop the Docker container
+    # Stop the Docker container
         - docker stop maven-web-app
-    3.5. Remove the Docker container
+    # Remove the Docker container
         - docker rm maven-web-app
-    3.6. Remove the Docker image
+    # Remove the Docker image
         - docker rmi maven-web-app
 
 4. ### Run with Kubernetes
