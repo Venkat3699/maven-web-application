@@ -48,7 +48,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <hr>
 <p align=center>SR Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2022 by <a href="http://SRtechnologies.com/">SR Technologies,Ananthapuram</a> </small></p>
+<p align=center><small>Copyrights 2018 by <a href="http://SRtechnologies.com/">SR Technologies,Ananthapuram</a> </small></p>
 
 </body>
 </html>
