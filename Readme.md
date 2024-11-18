@@ -22,12 +22,11 @@ Before starting, ensure you have the following installed:
 
 ## Build and Run Instructions
 
-### Build Locally
-1. Clone the repository:
+1. ### Clone the repository:
     git clone https://github.com/Venkat3699/maven-web-application.git
     cd maven-web-application
 
-2. Use Maven to build the application:
+2. ### Use Maven to build the application:
     mvn clean package
 
 3. ### Run with Docker
@@ -36,31 +35,33 @@ Before starting, ensure you have the following installed:
     ##### Run the Docker container
         docker run -p 8080:8080 maven-web-app
     ##### Access the application 
-        - http://localhost:8080
+        http://<IP of your machine>:8080
     ##### Stop the Docker container
-        - docker stop maven-web-app
+        docker stop maven-web-app
     ##### Remove the Docker container
-        - docker rm maven-web-app
+        docker rm maven-web-app
     ##### Remove the Docker image
-        - docker rmi maven-web-app
+        docker rmi maven-web-app
 
 4. ### Run with Kubernetes
     ##### Apply the Kubernetes deployment YAML:
-        - kubectl apply -f kubernetes/deployment.yaml
+        kubectl apply -f mavenwebappdeployment.yaml
     ##### Verify the deployment:
-        - kubectl get deployments
-    ##### Expose the service
-        - kubectl expose deployment maven-web-app --type=NodePort --port=8080
+        kubectl get deployments
+    ##### Get Pods
+        kubectl get pods -o wide
     ##### Get the NodePort
-        - kubectl get svc
+        kubectl get svc
+    ##### Get Endpoints
+        kubectl get endpoints
     ##### Access the application 
-        - http://<node-ip>:<node-port>
+        http://<node-ip>:<node-port>
     ##### Delete the deployment
-        - kubectl delete deployment maven-web-app
+        kubectl delete deployment maven-web-app
     ##### Delete the service
-        - kubectl delete svc maven-web-app
+        kubectl delete svc maven-web-app
     ##### Delete the pod
-        - kubectl delete pod maven-web-app-<pod-name>
+        kubectl delete pod maven-web-app-<pod-name>
 
 ## Author
      Venkat3699
